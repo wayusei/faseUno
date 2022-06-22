@@ -123,23 +123,78 @@ article p {
     background-color: #fffbf7;
 }
 
-.growing-ecommerce {
+.features {
+    background-color: #025157;
+    padding: 5% 10%;
+    display: grid;
+    grid-template: repeat(2, 330px)/repeat(2, 1fr);
+}
+
+.features .feature-card {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.features .feature-card .feature-content {
+    display: block;
+}
+.features .feature-card .feature-content a {
+    color: #67b54b;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.features .feature-card .feature-content img {
+    width: 50px;
+}
+.features .feature-card .feature-content h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #343434;
+} 
+
+.features .feature-card .feature-content p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+
+.features .feature-card .feature-content > * {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.features .feature-card .feature-image {
+    position: relative;
+    right: -50px;
+    height: 80%;
+}
+
+.success-stories {
     background-color: #a1d683;
     display: flex;
 }
-.growing-ecommerce h2 {
+
+.success-stories h2 {
     font-family: "Alegreya", serif;
     font-size: 51px;
     line-height: 61px;
     color: #025157;
 }
-.growing-ecommerce p {
+.success-stories p {
     color: #343434;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
-.growing-ecommerce button {
+.success-stories button {
     font-size: 14px;
     padding: 12px 12px 6px 12px;
     border-radius: 8px;
@@ -147,7 +202,7 @@ article p {
     font-weight: 600;
     margin-left: 0;
 }
-.growing-ecommerce img {
+.success-stories img {
     width: 500px;
     max-width: 100%;
 }
