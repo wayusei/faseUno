@@ -53,7 +53,7 @@ li {
 }
 
 .navbar {
-    width: 70%;
+    width: 100%;
     text-align: left;
     color: #025157;
     font-weight: 500;
@@ -180,22 +180,30 @@ article p {
 
 .success-stories {
     background-color: #a1d683;
+    padding: 5% 15%;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.success-stories h2 {
+.success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+}
+
+.success-stories .overview h2 {
     font-family: "Alegreya", serif;
     font-size: 51px;
     line-height: 61px;
     color: #025157;
 }
-.success-stories p {
+.success-stories .overview p {
     color: #343434;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
-.success-stories button {
+.success-stories .overview button {
     font-size: 14px;
     padding: 12px 12px 6px 12px;
     border-radius: 8px;
@@ -203,17 +211,59 @@ article p {
     font-weight: 600;
     margin-left: 0;
 }
-.success-stories img {
+.success-stories .overview img {
     width: 500px;
     max-width: 100%;
 }
 
+.success-stories .stories-carousel .card {
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.success-stories .stories-carousel .card .card-media {
+    position: relative;
+}
+
+.success-stories .stories-carousel .card .card-media figure {
+    margin-top: 0;
+}
+
+.success-stories .stories-carousel .card .card-media .company {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-stories .stories-carousel .card .card-media .company img {
+    max-width: 75%;
+    object-fit: contain;
+}
+
+.success-stories .stories-carousel .card .card-body {
+    padding: 25px;
+}
+
+.success-stories .stories-carousel .card .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+}
+
   /** dispositivos móviles en vista viewport (vertical) */
   @media (max-width: 575px) {
-    .navbar,
-    /* .actions {
-        display: none;
-    } */
+    .actions,
+    .navbar {
+        text-align: center;
+    } 
     h1 {
         font-size: 30px;
     }
@@ -262,12 +312,18 @@ article p {
   
   /** dispositivos pequeños en vista landscape (horizontal) */
   @media (min-width: 576px) and (max-width: 767px) {
- 
+    .actions,
+    .navbar {
+        text-align: center;
+    } 
   }
   
   /** dispositivos medianos (tablets) */
   @media (min-width: 768px) and (max-width: 991px) {
-
+    .actions,
+    .navbar {
+        text-align: center;
+    } 
   }
   
   /** dispositivos grandes (desktops) */
