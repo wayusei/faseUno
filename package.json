@@ -1,0 +1,22 @@
+{
+  "name": "matcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wayusei/faseUno.git"
+  },
+  "author": "Rodrigo Rosas Zamudio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wayusei/faseUno/issues"
+  },
+  "homepage": "https://github.com/wayusei/faseUno#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
